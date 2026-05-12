@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Result Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .field { margin-bottom: 10px; }
+        label { display: inline-block; width: 120px; }
+        input[type="number"] { width: 80px; }
+        #result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Result Calculator</h1>
+    <p>Enter marks for each subject and click Calculate.</p>
+
+    <div class="field"><label for="m1">Subject 1:</label><input id="m1" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m2">Subject 2:</label><input id="m2" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m3">Subject 3:</label><input id="m3" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m4">Subject 4:</label><input id="m4" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m5">Subject 5:</label><input id="m5" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m6">Subject 6:</label><input id="m6" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m7">Subject 7:</label><input id="m7" type="number" min="0" max="100" value="0"></div>
+    <div class="field"><label for="m8">Subject 8:</label><input id="m8" type="number" min="0" max="100" value="0"></div>
+
+    <button type="button" onclick="calculateResult()">Calculate Result</button>
+
+    <div id="total"></div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
